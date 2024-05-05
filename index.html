@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Primer</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Most of HTML5 tags">
+    <meta name="keywords" content="HTML5, tags">
+    <meta name="author" content="http://blazardsky.space">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <main>
+
+        <h1 style="font-size: 2.85rem;">HTML Primer</h1>
+
+        <h1>What is this Webpage?</h1>
+        <p>This webpage can be used as a guide to quickly come up to speed on how to make your own webpages using HTML.</p>
+        <p>This page (1) lists, (2) describes, and (3) illustrates the main HTML tags that are used for building webpages. In this document, each tag has its own section, and the sections are separated by horizontal lines.</p>
+        <p>Each tag we cover also has its own illustration at the end of its section. For each illustration, you should compare the tag(s) in the file to how it is illustrated in the browser. This will help you connect the tags in the file to what they look like in the browser.</p>
+
+        <h2>How to use it</h2>
+        <p>The best way to use this file is to do a split screen. Open the file in a text editor on the left side of the screen. Then open the file in a web browser on the right side of the screen.</p>
+        <p>Then you will be able to see the code on the left, and look at the browser on the right, to see how the code gets translated by the browser into what you see in the browser window.</p>
+
+        <h2>Tools</h2>
+
+        <p>All you need to start developing websites is (1) a text editor to write HTML, and (2) a browser to test it in. If you arrange a split screen, you can make a change to the code on the left, and just refresh the browser on the right to see the changes reflected in the browser.</p>
+
+        <p>The tools we use are:</p>
+
+        <ol>
+            <li><strong>A text editor for coding:</strong> We use <mark>Sublime Text 3</mark>. It's a very basic editor but does things like syntax highlighting to make reading and writing your programs easier. It's free, but every once in a while it shows a pop up asking if you want to download the paid version. You can just click no everytime. If you want to try out Sublime Text 3, you can download it from here: <a href="https://www.sublimetext.com/3">Download Sublime Text 3</a>. If you don't want to use Sublime Text, you can use a different editor, but we strongly recommend using one that is more programmer friendly than a basic editor like Notepad (Windows).</li><br/>
+            <li><strong>A web browser:</strong> We like to use <mark>Google Chrome</mark> for viewing, testing, and debugging our websites. It is by far our favorite browser for developing websites. If you don't like or have Chrome, you could also use Mozilla Firefox. We would rank these two as the best browsers for web development. Chrome at number 1 and Firefox at number 2. We wouldn't use any other browser than one of these two for web development.</li>
+        </ol>
+
+        <hr>
+
+        <h1>What is HTML?</h1>
+
+        <p>HTML stands for Hypertext Markup Language. It's the standard markup language used to create webpages.</p>
+        <p>Don't get confused by the word "markup". A markup language is just one that uses tags to provide information about it's contents. In the case of HTML, the tags are used to tell the browser how to show the contents of the webpage.</p>
+        <p>The latest version of HTML is HTML5.</p>
+        
+        <h2>HTML Tags</h2>
+        <p>An HTML tag is a fundamental component of HTML. <mark>Each tag is like a word in the HTML language. There are approximately 100 different tags in HTML5, but only 30 or 40 are used regularly. We'll cover the 38 most commonly used tags in this document.</mark></p>
+        <p>Note, the terms "tag" and "element" are often used interchangably to mean the same thing, which we describe next. However, in this document, we tried to use the term "tag" instead of "element" wherever possible, just because that's our preference. The term just seems a little more clear to us.</p>
+        <p><mark>HTML tags consist of angle brackets ('<' and '>'), which enclose the name of the tag. And the tags come in pairs: an opening tag and a closing tag. The opening tag specifies the beginning of an element, and the closing tag denotes the end of that element. The content of the element is placed between the opening and closing tags.</mark></p>
+        <p>For example:</p>
+        <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>
+        <br/>
+        <p>The opening tag is:</p>
+        <code>&lt;p&gt;</code>
+        <br/>
+        <p>And the closing tag is:</p>
+        <code>&lt;/p&gt;</code>
+        <br/>
+        <p>Note that the name of the closing tag starts with a "/", like <code>&lt;<mark>/</mark>p&gt;</code>. That's just to show that it is a closing tag.</p>
+        <p>That is the very basics of how an HTML tag works.</p>
+        <p>Now that we've got that out of the way, let's dive into the 38 HTML tags you'll need to know to kickstart your learning!</p>
+
+        <hr>
+
+        <h1>1. Headings:</h1>
+
+        <h2>Syntax:</h2>
+        <p><strong>Note:</strong> In the context of computer programming, the term "syntax" refers to the proper way that the lines of code should be written, according the language you are using. It's like the grammer that must be followed to use the language.</p>
+        <p>To illustrate, understand that two different languages can have two different syntaxes for doing the same thing. For example, to create a variable and set it equal to 5 in Python, you would write <code>x = 5</code>, but in PHP you would write <code>$x = 5;</code>. Comparing the two lines of code, you can see that in PHP, the variable name is prepended with a "$" and the line is ended with a ";". But they both essentially do the same thing.</p>
+        <p>You just have to make sure you're writing code using the proper "grammer", according to the syntax of the language your using.</p>
+        <p>Now let's see the syntax for headers in HTML:</p>
+        <ul>
+            <li><code>&lt;h1&gt;Heading 1&lt;/h1&gt;</code></li>
+            <li><code>&lt;h2&gt;Heading 2&lt;/h2&gt;</code></li>
+            <li><code>&lt;h3&gt;Heading 3&lt;/h3&gt;</code></li>
+            <li><code>&lt;h4&gt;Heading 4&lt;/h4&gt;</code></li>
+            <li><code>&lt;h5&gt;Heading 5&lt;/h5&gt;</code></li>
+            <li><code>&lt;h6&gt;Heading 6&lt;/h6&gt;</code></li>
+        </ul>
+        
+        <h2>Description:</h2>
+        <p>Heading tags in HTML are used to define headings and subheadings within a webpage. They provide structure and hierarchy to the content, making it easier for the user to understand the organization of the page and its content. They're just like headings and subheadings in a regular document.</p>
+        
+        <h2>Illustration:</h2>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+        
+        <hr>
+
+        <h1>2. Parapgraphs:</h1>
+
+        <h2>Syntax:</h2>
+        <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>
+        <br/>
+        
+        <h2>Description:</h2>
+        <p>The purpose of the paragraph tag is the same purpose paragraphs have in English, to separate different text and add a little spacing between them.
+
+        <h2>Illustration:</h2>
+        <p>This is the first paragraph of text.</p>
+        <p>This is the second paragraph. Paragraphs are used to organize and structure textual content within a webpage.</p>
+
+        <hr>
+
+        <h1>3. Inline Tags:</h1>
+
+        <h2>Syntax:</h2>
+        <ol>
+            <li><code>&lt;strong&gt;bold word&lt;/strong&gt;</code></li>
+            <li><code>&lt;b&gt;the old way of bolding&lt;/b&gt;</code></li>
+            <li><code>&lt;i&gt;italic&lt;/i&gt;</code></li>
+            <li><code>&lt;em&gt;emphasis&lt;/em&gt;</code></li>
+            <li><code>&lt;mark&gt;mark&lt;/mark&gt;</code></li>
+            <li><code>&lt;sub&gt;subscript&lt;/sub&gt;</code></li>
+            <li><code>&lt;sup&gt;superscript&lt;/sup&gt;</code></li>
+            <li><code>&lt;u&gt;underline&lt;/u&gt;</code></li>
+            <li><code>&lt;span&gt;span&lt;/span&gt;</code></li>
+        </ol>
+        
+        <h2>Description:</h2>
+        <p>Inline tags are typically used within larger blocks of text to apply specific, visual formatting to the parts of the text that the tags surround.</p>
+
+        <ol>
+            <li><code>&lt;strong&gt;</code>: Surrounds text that should be displayed in a bold font.</li>
+            <li><code>&lt;b&gt;</code>: Surrounds text that should be displayed in a bold font.</li>
+            <li><code>&lt;i&gt;</code>: Surrounds text that should be displayed in an italic font style.</li>
+            <li><code>&lt;em&gt;</code>: Surrounds text that should be emphasized, often displayed in italics by default.</li>
+            <li><code>&lt;mark&gt;</code>: Surrounds text that should be highlighted for reference or emphasis, often displayed with a background color.</li>
+            <li><code>&lt;sub&gt;</code>: Makes subscript text, typically rendered slightly below the normal baseline.</li>
+            <li><code>&lt;sup&gt;</code>: Makes superscript text, typically rendered slightly above the normal baseline.</li>
+            <li><code>&lt;u&gt;</code>: Surrounds text that should underlined.</li>
+            <li><code>&lt;span&gt;</code>: Used as a generic container for inline tags for applying styles to the text.</li>
+            
+        </ol>
+
+        <h2>Illustration:</h2>
+        
+        <ol> 
+            <li><strong>bold</strong></li> 
+            <li><b>the old way of bolding</b></li> 
+            <li><i>italic</i></li>
+            <li><em>emphasis</em></li> 
+            <li><mark>mark</mark></li>
+            <li>5<sub>sub</sub></li>
+            <li>5<sup>sup</sup></li>
+            <li><u>underline</u></li>
+            <li><span>span</span></li>
+        </ol>
+
+        <p>This is an example of <strong>bolding</strong> text inline. Refer to the code to see how the <code>&lt;strong&gt;</code> tag is used inline with the <code>&lt;p&gt;</code> tag (in other words, inside the <code>&lt;p&gt;</code> tag).</p>
+        
+        <hr>
+
+        <h1>4. Anchors (aka Links):</h1>
+
+        <h2>Syntax:</h2>
+        <code>&lt;a href="https://www.example.com"&gt;Example link&lt;/a&gt;</code>
+
+        <h2>Description:</h2>
+        <p>The anchor tag is used to create links, allowing users to navigate between different web pages or sections within the same page. When a user clicks on a link, it directs their browser to the URL specified in the <code>href</code> attribute of the <code>&lt;a&gt;</code> tag.</p>
+        
+        <p>Here's a breakdown of the anchor tag and its two main attributes.</p>
+        <p><mark>Attributes are key/value pairs that are included within the opening tag of an HTML element and adjusts the behavior or display of the HTML element. They consist of a name followed by an equal sign (=) and a value enclosed in double or single quotation marks.</mark></p>
+        <p>Back to the anchor tag:</p>
+        <ul>
+            <li><code>&lt;a&gt;</code>: This is the opening tag of the anchor element.</li>
+            <li><code>href</code>: Stands for "hypertext reference". This attribute specifies the destination URL, or the location to which the link should navigate. It can be an absolute URL (e.g., "https://www.example.com") or a relative URL (e.g., "page.html" or "#section"). Absolute URLs contain the full web address, including the protocol (e.g., "https://") and the domain name (e.g., "www.example.com"). Relative URLs are used for linking to a webpage or resource (resources include things like CSS file, JS file, image, etc.) in the same domain, and specify the location of the file relative to the location of the current file in the website (or project folder).</li>
+            <li><code>target</code>: Specifies where to open the linked document. If the attribute is not included, the link is opened in the same browser tab by default. <mark>To open the link in a new tab, set the attribute to <code>target="_blank"></code>.</mark></li>
+        </ul>
+
+        <h2>Illustration:</h2>
+
+        <a href="https://www.example.com">Open link</a><br/><br/>
+        <a href="https://www.example.com" target="_blank">Open link in new tab</a>
+        <br/>
+        <br/>
+
+        <hr>
+
+
+        <h1>5. Ordered Lists:</h1>
+
+        <h2>Syntax:</h2>
+        <pre><code>&lt;ol&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+           
+        <h2>Description:</h2>
+        <p>The <code>&lt;ol&gt;</code> tag stands for <mark>"ordered list"</mark>. It's used to create a list of items, where each item is automatically numbered in sequence. Ordered lists are typically used when the order of the items is important.</p>
+        <p><code>&lt;ol&gt;</code> is the outer tag. In between the opening and closing <code>&lt;ol&gt;</code> tags, there are <code>&lt;li&gt;</code> tags. <code>&lt;li&gt;</code> stands for <mark>"list item"</mark>, and is used to define each item in the list.
+    
+        <h2>Illustration:</h2>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+
+        <hr>
+
+
+        <h1>6. Unordered Lists:</h1>
+
+        <h2>Syntax:</h2>
+        <pre><code>&lt;ul&gt;
+    &lt;li&gt;Bullet item 1&lt;/li&gt;
+    &lt;li&gt;Bullet item 2&lt;/li&gt;
+    &lt;li&gt;Bullet item 3&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+           
+        <h2>Description:</h2>
+        <p>The <code>&lt;ul&gt;</code> tag stands for <mark>"unordered list"</mark>. It's used to create a list of items, where each item is prepended with a bullet point. Unordered lists are typically used when the order of the items is <i>not</i> important.</p>
+        <p><code>&lt;ul&gt;</code> is the outer tag. In between the opening and closing <code>&lt;ul&gt;</code> tags, there are <code>&lt;li&gt;</code> tags. <code>&lt;li&gt;</code> stands for "list item", and is used to define each item in the list.
+        <p><strong>Note:</strong> The syntax for the <code>&lt;ol&gt;</code> and <code>&lt;ul&gt;</code> tags is very similar. The only difference is their outer tag: <code>&lt;ol&gt;</code> for ordered lists and <code>&lt;ul&gt;</code> for unordered lists. Both use <code>&lt;li&gt;</code> to list the items.
+   
+
+        <h2>Illustration:</h2>
+        <ul>
+            <li>Bullet item 1</li>
+            <li>Bullet item 2</li>
+            <li>Bullet item 3</li>
+        </ul>
+
+        <hr>
+
+    
+        <h1>7. Videos:</h1>
+
+        <h2>Syntax:</h2>
+        <pre><code>&lt;video width="640" height="480" src="https://archive.org/download/Popeye_forPresident/Popeye_forPresident_512kb.mp4" controls&gt;
+    Sorry, your browser doesn't support HTML5 video.
+&lt;/video&gt;</code></pre>
+
+        <h2>Description:</h2>
+        <p>The video tag is used to embed video content directly into web pages without requiring third-party plugins.</p>
+        
+        <p>The two main attributes are:</p>
+        <ul>
+            <li><code>src</code>: Specifies the URL of the video file. It can be in various formats like MP4, WebM, or Ogg.</li>
+            <li><code>controls</code>: This attribute adds standard playback controls to the video player, allowing users to play, pause, seek, and adjust the volume of the video.</li>
+        </ul>
+
+        <p><strong>Fallback Content:</strong> The text or elements placed between the opening and closing <code>&lt;video&gt;</code> tags are displayed in browsers that do not support the <code>&lt;video&gt;</code> tag. 
+
+        <h2>Illustration:</h2>
+
+        <video width="640" height="480" src="https://archive.org/download/Popeye_forPresident/Popeye_forPresident_512kb.mp4" controls>
+            Sorry, your browser doesn't support HTML5 <code>video</code>, but you can
+            download this video from the <a href="https://archive.org/details/Popeye_forPresident" target="_blank">Internet Archive</a>.
+        </video>
+
+        <hr>
+
+
+        <h1>8. Tables:</h1>
+
+        <h2>Syntax:</h2>
+        <pre><code>&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Numbers&lt;/th&gt;
+            &lt;th&gt;Letters&lt;/th&gt;
+            &lt;th&gt;Colors&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;1&lt;/td&gt;
+            &lt;td&gt;A&lt;/td&gt;
+            &lt;td&gt;Red&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;2&lt;/td&gt;
+            &lt;td&gt;B&lt;/td&gt;
+            &lt;td&gt;Green&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;3&lt;/td&gt;
+            &lt;td&gt;C&lt;/td&gt;
+            &lt;td&gt;Blue&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+
+        <h2>Description:</h2>
+        <p>The HTML <code>&lt;table&gt;</code> tag is used to create tables, which are a way to display data in rows and columns. <mark>Tables are commonly used to present information in a structured format</mark>, such as schedules, pricing lists, and data comparisons. <mark>The format looks similar to Microsoft Excel.</mark>
+        
+        <p><strong>Basic Structure:</strong> The <code>&lt;table&gt;</code> tag defines the beginning of the table, and the <code>&lt;/table&gt;</code> tag denotes the end of the table. Inside the table, you define rows using the <code>&lt;tr&gt;</code> tag (table row), and within each row, you define cells using the <code>&lt;td&gt;</code> tag (table data).</p>
+        
+        <p><strong>Headers:</strong> To define header cells in a table, you use the <code>&lt;th&gt;</code> tag (table header) instead of <code>&lt;td&gt;</code>. Header cells are typically displayed in bold and centered by default.</p>
+
+        <p>Note, optionally, you can place the header tags inside a <code>&lt;thead&gt;</code> tag and the body of the table inside a <code>&lt;tbody&gt;</code> tag to make the table more readable to other developers, and it also makes it easier to style.
+        
+
+        <h2>Illustration:</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Numbers</th>
+                    <th>Letters</th>
+                    <th>Colors</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td>123</td>
+                    <td>ABC</td>
+                    <td>RGB</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>A</td>
+                    <td>Red</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>B</td>
+                    <td>Green</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>C</td>
+                    <td>Blue</td>
+                </tr>
+            </tbody>
+        </table>
+        <br/>
+
+        <hr>
+
+
+        <h1>9. Audio:</h1>
+
+        <h2>Syntax:</h2>
+        <pre><code>&lt;audio src="https://archive.org/download/ReclaimHtml5/ReclaimHtml5.mp3" controls&gt;
+    I'm sorry. You're browser doesn't support HTML5 audio.
+&lt;/audio&gt;</code></pre>
+
+        <h2>Description:</h2>
+        <p>Similar to the <code>&lt;video&gt;</code> tag, the <code>&lt;audio&gt;</code> tag is used to embed audio content directly into web pages without requiring third-party plugins.</p>
+        
+        <p>The two main attributes are:</p>
+        <ul>
+            <li><code>src</code>: Specifies the URL of the audio file. It can be in various formats like MP3, Ogg, WAV, or AAC.</li>
+            <li><code>controls</code>: This attribute adds standard playback controls to the audio player, allowing users to play, pause, seek, and adjust the volume of the audio.</li>
+        </ul>
+
+        <p><strong>Fallback Content:</strong> The text or elements placed between the opening and closing <code>&lt;audio&gt;</code> tags are displayed in browsers that do not support the <code>&lt;audio&gt;</code> tag. 
+
+        <h2>Illustration:</h2>
+
+        <audio controls>
+            I'm sorry. You're browser doesn't support HTML5 audio.
+            <source src="https://archive.org/download/ReclaimHtml5/ReclaimHtml5.ogg" type="audio/ogg">
+            <source src="https://archive.org/download/ReclaimHtml5/ReclaimHtml5.mp3" type="audio/mpeg">
+        </audio>
+    
+        
+        <hr>
+
+        
+        <h1>10. IFrame:</h1>
+
+        <h2>Syntax:</h2>
+        <pre style="white-space:pre-wrap; word-wrap:break-word;"><code>&lt;iframe src="https://open.spotify.com/embed?uri=spotify%3Atrack%3A67HxeUADW4H3ERfaPW59ma?si=PogFcGg9QqapyoPbn2lVOw" width="300" height="380"&gt;&lt;/iframe&gt;</code></pre>
+
+        <h2>Description:</h2>
+        <p>The <code>&lt;iframe&gt;</code> tag in HTML is used to embed another HTML webpage within the current webpage. It stands for "inline frame" and creates a window (frame) in which another webpage can be displayed.</p>
+        <p><mark>Note, a lot of websites don't allow you to use their webpages on your site within iframes. You'll know whether or not they allow it just by creating the iframe tag and seeing if the other page shows in the browser.</mark></p>
+        
+        
+
+        <h2>Illustration:</h2>
+
+        <iframe src="https://open.spotify.com/embed?uri=spotify%3Atrack%3A67HxeUADW4H3ERfaPW59ma?si=PogFcGg9QqapyoPbn2lVOw" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+    
+        <hr>   
+
+
+        <h1>11. Images:</h1>
+
+        <h2>Syntax:</h2>
+        <pre><code>&lt;img src="https://img.freepik.com/free-vector/group-people-illustration-set_52683-33806.jpg" alt="people"&gt;</code></pre>
+
+        <h2>Description:</h2>
+        <p>The <code>&lt;img&gt;</code> tag in HTML is used to embed images into web pages. It stands for "image" and is a <mark>self-closing tag</mark>, meaning it does not require a separate closing tag.</p>
+
+        <p>The two main attributes are:</p>
+        <ul>
+            <li><code>src</code>: Specifies the URL of the image file. It can be a relative or absolute URL.</li>
+            <li><code>alt</code>: Provides alternative text for the image. This is important for accessibility purposes and is displayed if the image cannot be loaded or for users who use screen readers. It should describe the content or function of the image.</li>
+        </ul>
+        
+        
+
+        <h2>Illustration:</h2>
+
+        <img src="https://img.freepik.com/free-vector/group-people-illustration-set_52683-33806.jpg" alt="people">
+    
+        
+        <hr>   
+
+        <h1>12. Forms:</h1>
+
+        <h2>Syntax:</h2>
+        <pre><code>&lt;form action="process.php" method="get"&gt;
+     &lt;h4&gt;Personal Information&lt;/h4&gt;
+     &lt;input name="name" id="name"/&gt;
+     &lt;input name="dob" id="dob" type="date"/&gt;
+     &lt;button type="submit"&gt;Submit&lt;/button&gt;
+ &lt;/form&gt;</code></pre>
+
+        <h2>Description:</h2>
+        <p>In HTML, <mark>the <code>&lt;form&gt;</code> element is a slightly advanced element that allows users to input data and send it to the server for processing.</mark> This information can include things like their name, email, birthdate, etc. When the server receives this data, it can save it in a database, use it to send back a personalized message, or many other things.</p>
+        <p>Forms are a fundamental part of web development, enabling various types of user interactions such as logging in, registering and submitting feedback.</p>
+
+        <p><mark>At its core though, forms are just a tag that surround input elements, including a submit button. The submit button has an internal mechanism that when clicked, sends the data in the form fields to the webpage that is specified in the <code>action</code> attribute in the <code>&lt;form&gt;</code> tag. The webpage is usually a server-side page that is written in a server-side language like PHP.</mark></p>
+        <p><mark>In the example in the Syntax section above, the form fields will be sent to the server-side page "process.php", which can then do something with the user data, such as saving it to a database.</mark></p>
+
+        <p>Here's how the <code>&lt;form&gt;</code> element works:
+
+        <p><strong>1. Basic Structure:</strong> The <code>&lt;form&gt;</code> tag is a container for form elements such as text inputs, checkboxes, radio buttons, and buttons. It has an opening <code>&lt;form&gt;</code> tag and a closing <code>&lt;/form&gt;</code> tag. Inside the form, you place the elements that you want to include in the form to collect information from the user.</p>
+
+        <p><strong>2. Attributes:</strong> The <code>&lt;form&gt;</code> element supports several attributes that control its behavior. The two main attributes are:
+
+        <ul>
+            <li><code>action</code>: Specifies the URL where the form data should be submitted.</li>
+            <li><code>method</code>: Specifies the HTTP method to be used when submitting the form data. Common values are "GET" and "POST". <mark>This a slightly advanced concept that we can get to later.</mark></li>
+        </ul>
+        
+        <p><strong>3. Form Elements:</strong> Inside the <code>&lt;form&gt;</code> tag, you can include various form elements such as <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, <code>&lt;select&gt;</code>, and <code>&lt;button&gt;</code>. These elements allow users to input data into the form.</p>
+
+        <p><strong>4. Submission:</strong> When the user submits the form (by clicking a submit button or pressing Enter), the data entered into the form elements is packaged into an HTTP request and sent to the URL specified in the <code>action</code> attribute of the <code>&lt;form&gt;</code> tag. <mark>This is the internal mechanism we were talking about above.</mark></p>
+
+        <h2>Illustration:</h2>
+
+        <form action="" method="get">
+            <h4>Personal Information</h4>
+            <label for="name">Name</label><br>
+            <input name="name" id="name"/><br>
+            <label for="dob">Date of Birth<label><br>
+            <input name="dob" id="dob" type="date"/>
+            <button type="submit">Submit</button>
+        </form>
+    
+        <br/>
+        <br/>
+
+        <hr>  
+        
+        <h1>13. Inputs (form elements):</h1>
+
+        <h2>Syntax:</h2>
+        <pre><code>&lt;input type="text" name="name" id="name"/&gt;</code></pre>
+
+        <h2>Description:</h2>
+        <p>The <code>&lt;input&gt;</code> tag in HTML is one of the most versatile elements, used to create various types of form components for user input. It can create text fields, checkboxes, radio buttons, buttons, and more.</p>
+
+        <p><strong>1. Basic Structure:</strong> The <code>&lt;input&gt;</code> tag is a <mark>self-closing tag</mark>, meaning it does not have a separate closing tag. It can be used to create a wide range of form components, and its behavior is determined by the <code>type</code> attribute.
+
+        <p>For example, for an input text field you would write: <code>&lt;input type="text" name="username" id="username"&gt;</code>
+
+        <p><strong>2. Attributes:</strong> The <code>&lt;input&gt;</code> tag supports several attributes that control its behavior and appearance. Some common attributes include:</p>
+        <ul>
+            <li><mark><code>type</code></mark>: Specifies the type of input component to be created. Common values include "text", "password", "checkbox", "radio", "submit", "button", and more.</li>
+            <li><mark><code>name</code></mark>: Specifies the name of the input component, which is submitted along with the form data. The form data is usually sent to the server in key/value pairs. So if the name of the input is set to "email", the server side script will access this from the request using the keyword "email". Key/value pairs is a commonly recurring concept in programming. A key/value pair consists of two components, the key, which is a unique id associated with the value, and the value, which is the actual data or information corresponding to the key. Together, they form an association where you can look up a value using its associated key. In the previous example, let's say the "email" field is submitted by the form to a PHP page with the value "test@example.com". In the PHP code, this value could be retrieved by the PHP page using the syntax <code>$x = $_GET['email'];</code>, where <code>'email'</code> is the key, and <code>$_GET['email']</code> returns the value of the email. So <code>$x</code> will be set to "test@example.com".</li>
+            <li><code>value</code>: Specifies the initial value of the input component.</li>
+            <li><code>placeholder</code>: Provides a short hint or example text that is displayed in the input field before the user enters their own text.</li>
+            <li><code>required</code>: If present, indicates that the input field must be filled out before the form can be submitted.</li>
+            <li><code>disabled</code>: If present, disables the input field, preventing user input.</li>
+        </ul>
+        
+        
+
+        <h2>Illustration:</h2>
+
+        <code>&lt;input type="text" name="username" id="username"&gt;</code>
+        <input type="text" name="name" id="name"/><br/><br/>
+    
+        <code>&lt;input type="pswd" name="pswd" id="password"&gt;</code>
+        <input type="password" name="pswd" id="pswd"/><br/><br/>
+
+        <pre><code>&lt;input type="checkbox" name="agree" id="agree" value="yes"&gt;
+&lt;label for="agree"&gt;I agree to the terms and conditions&lt;/label&gt;</code></pre>
+        <input type="checkbox" name="agree" id="agree" value="yes">
+        <label for="agree">I agree to the terms and conditions</label><br/><br/>
+
+        <pre><code>&lt;input type="radio" name="gender" id="male" value="male"&gt;
+&lt;label for="male"&gt;Male&lt;/label&gt;
+&lt;input type="radio" name="gender" id="female" value="female"&gt;
+&lt;label for="female"&gt;Female&lt;/label&gt;</code></pre>
+
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label><br/><br/>
+
+
+        <br/>
+        <br/>
+        
+        <hr> 
+
+
+        <h1>14. Text Areas (form element):</h1>
+
+        <h2>Syntax:</h2>
+        <pre><code>&lt;textarea rows="4" cols="50"&gt;
+    Write something in here
+&lt;/textarea&gt;</code></pre>
+
+        <h2>Description:</h2>
+        <p>The <code>&lt;textarea&gt;</code> tag in HTML is used to create a <mark>multi-line text input field</mark> within a <code>&lt;form&gt;</code>. Unlike the <code>&lt;input&gt;</code> tag, which is used for single-line text inputs, <code>&lt;textarea&gt;</code> allows users to input multiple lines of text, making it suitable for longer pieces of text such as comments, messages, or essays.</p>
+
+        <h2>Illustration:</h2>
+
+        <textarea id="textarea" name="textarea" rows="4" cols="50">
+            Write something in here
+        </textarea>
+
+        <hr>
+
+
+        <h1>15. Select (form element):</h1>
+
+        <h2>Syntax:</h2>
+        <pre><code>&lt;select&gt;
+    &lt;option value="1"&gt;One&lt;/option&gt;
+    &lt;option value="2"&gt;Two&lt;/option&gt;
+    &lt;option value="3"&gt;Three&lt;/option&gt;
+    &lt;option value="4"&gt;Four&lt;/option&gt;
+    &lt;option value="5"&gt;Five&lt;/option&gt;
+    &lt;option value="6"&gt;Six&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+
+        <h2>Description:</h2>
+        <p>The <code>&lt;select&gt;</code> tag is used to create a <mark>drop-down list</mark> within a web page. It provides users with a way to choose one or more options from a predefined list.</p>
+
+        <h2>Illustration:</h2>
+
+        <select>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="4">Four</option>
+            <option value="5">Five</option>
+            <option value="6">Six</option>
+        </select>
+
+        <hr>
+
+
+        <h1>16. Container Elements:</h1>
+
+        <h2>Syntax:</h2>
+        <ol>
+            <li><code>&lt;main&gt;content&lt;/main&gt;</code></li>
+            <li><code>&lt;section&gt;content&lt;/section&gt;</code></li>
+            <li><code>&lt;div&gt;content&lt;/div&gt;</code></li>
+        </ol>
+        
+        <h2>Description:</h2>
+        <p>The <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;div&gt;</code> elements are all block-level elements in HTML, used for structuring and organizing content on a web page. They are used for grouping and organizing content.</p>
+
+        <ol>
+            <li><code>&lt;main&gt;</code>: The <code>&lt;main&gt;</code> element is meant to surround the main content of a document or webpage. It typically encapsulates all the content that is directly related to the central theme or purpose of the webpage. There should be only one <code>&lt;main&gt;</code> element per webpage, and it should not be nested within other structural elements like <code>&lt;section&gt;</code>.</li>
+            <li><code>&lt;section&gt;</code>: The <code>&lt;section&gt;</code> element defines a section of a document or webpage that groups together related content. It's a generic container that can be used to organize content into thematic groups. <code>&lt;section&gt;</code> elements are often used to divide a webpage into different parts, such as chapters in an article or sections of a blog post.</li>
+            <li><mark><code>&lt;div&gt;</code></mark>: The <code>&lt;div&gt;</code> element is a generic container that is used to group together, and sometimes style, related content. It doesn't carry any semantic meaning on its own. <code>&lt;div&gt;</code> elements are often used to create divisions or sections within a webpage and are commonly used in conjunction with CSS to apply styling and layout to groups of elements that are contained within a <code>&lt;div&gt;</code>.</li>
+        </ol>
+
+        <h2>Illustration:</h2>
+        <p>Illustrations for container elements are hard to make because they themselves don't appear on the screen. It's their contents that appear. These tags are just used for structuring and grouping the contents into sections.</p>
+        <p>The <code>&lt;main&gt;</code> tag is optional, but if it is used, should surround all the content in the body.</p>
+        <p>The <code>&lt;section&gt;</code> tags are also optional, but if they are used, should seperate and organize the different content in the webpage into their own containers.</p>
+        <p>The <code>&lt;div&gt;</code> tags are very very commonly used to group elements together to apply CSS styling to the whole group of elements within the tag.</p>
+        <p>Since the container elements can't be visibly seen on the page, we have included code examples to show how they can be used.</p>
+
+        <h2>Code Examples:</h2>
+        
+        <h3>&lt;main&gt;</h3>
+        <pre><code>&lt;main&gt;
+    &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+    &lt;p&gt;This is the main content of the webpage.&lt;/p&gt;
+&lt;/main&gt;</code></pre>
+
+        <br/>
+
+        <h3>&lt;section&gt;</h3>
+        <pre><code>&lt;section&gt;
+    &lt;h2&gt;Chapter 1: Introduction&lt;/h2&gt;
+    &lt;p&gt;This section contains introductory content.&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;section&gt;
+    &lt;h2&gt;Chapter 2: Main Body&lt;/h2&gt;
+    &lt;p&gt;This section contains the main content of the article.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+
+        <br/>
+
+        <h3>&lt;div&gt;</h3>
+        <pre><code>&lt;div id="header"&gt;
+    &lt;!-- Content for the header section --&gt;
+&lt;/div&gt;
+
+&lt;div id="content"&gt;
+    &lt;!-- Main content of the webpage --&gt;
+&lt;/div&gt;
+
+&lt;div id="footer"&gt;
+    &lt;!-- Content for the footer section --&gt;
+&lt;/div&gt;
+</code></pre>
+
+        
+        <hr>
+
+
+        <h1>Other Important Notes:</h1>
+
+        <p>We're including some extra information here which will be helpful to know if you start reviewing the HTML of this file:</p>
+
+        <ul>
+            
+            <li>We used a lot of angle brackets ('&lt;' and  '&gt;') on this webpage when showing code examples. However, <marK>you can't use angle brackets within your HTML as is, because they are reserved for the HTML tags!</marK> So to make the angle brackets appear on the page, you have to use what are called HTML Character Entities. For example, to display the less than sign (<code>&lt;</code>), you have to write: <mark><code>&amp;lt;</code></mark>. In general, Character Entities start with an ampersand and end with a semicolon. In this case, the 'lt' stands for "less than".</li><br>
+            
+            <li>In HTML, <mark>comments are written like <code>&lt;!--  &nbsp;--&gt;</code></mark>. Nothing within these braces will be translated by the browser and shown on the screen on the screen. Comments can be useful for putting notes in the file or for debugging issues. For example, instead of deleting big sections of code to see what's wrong with your HTML, you can just temporarily comment them out so you don't lose your original code.</li><br/>
+
+            <li><mark>Indentation</mark> is used in HTML by adding tab spaces at the beginning of a line of code to indicate the level of nesting. It’s a practice that helps organize your code and visually represents the parent-child relationship between different elements. Some text editors (like Sublime Text and Atom) automatically indent as soon as you press Enter after an opening tag. Remember, indentation doesn’t affect how your webpage looks visually; it’s all about improving the readability of your code.</li><br/>
+
+                        
+            <li><strong>Other tags</strong>
+                <ul><br/>
+                    <li><mark><code>&lt;hr&gt;</code></mark>: The horizontal lines that separate each section of this webpage are made using the <code>&lt;hr&gt;</code> tag.</li><br/>
+                    <li><mark><code>&lt;br/&gt;</code></mark>: To add blank lines and create spacing between lines, we used the <code>&lt;br/&gt;</code> tag often in this file. It can be written <code>&lt;br/&gt;</code> or <code>&lt;br&gt;</code>.</li><br/>
+                    <li><code>&lt;code&gt;</code>: We used the <code>&lt;code&gt;</code> tag all over the place in this webpage. This tag is just a way of showing computer code within the text content of a webpage so it looks a little different. It is not a regularly used tag though.</li><br/>
+                    <li><code>&lt;pre&gt;</code>: The <code>&lt;pre&gt;</code> tag allows you to show text on the page and preserve both the spaces and line breaks in the text. We used it in combination with the code tag to display multiline code fragements with indentations. It is not a regularly used tag though.</li><br/>
+                    <li><code>&lt;label&gt;</code>: The <code>&lt;label&gt;</code> tag was used to associate a text label with various form elements. It is commonly used to add labels to form components such as text fields, text areas, checkboxes, radio buttons, and other input elements. The <code>&lt;label&gt;</code> tag supports a few attributes, the most important one being <code>for</code>: which specifices the <code>id</code> of the form element the label should be bound to.</li><br/>
+                </ul>
+            </li>
+            <li><strong>Attributes</strong>
+                <ul><br/>
+                    <li><mark><code>style</code></mark>: We used the <code>style</code> attribute in a few tags to modify the way they are displayed. The <code>style</code> attribute can be used on any HTML tag and allows you to add style to a tag. The syntax for using the style attribute is: <code>&lt;tagname style="property:value;"&gt;</code> For example: <code>&lt;p style="color: green;"&gt;This is a paragraph.&lt;/p&gt;</code>. This style changes the color of the text within the <code>&lt;p&gt;</code> tag to green.</li><br/>
+
+                    <li><mark><code>id</code></mark>: We use the <code>id</code> attribute to create a unque identifier for an HTML element. It can be used in any HTML element, but we only used it once in a while. The <code>id</code> tag can be used for styling the element using CSS, and it can also be used by JavaScript to grab a hold of the element and manipulate how its displayed or behaves. The syntax for the <code>id</code> attribute is <code>&lt;tagname id="unique_id"&gt;</code>.</li><br/>
+                </ul>
+            </li>
+
+        </ul>
+
+
+        <hr>
+
+
+        <h1>HTML Webpage Starter Template:</h1>
+
+        <p><mark>All HTML development starts from the same skeleton of tags.</mark> This skeleton is shown below.</p>
+        <p><mark>However, just to note, if you are starting from a template, or theme, which most of the time you would be, the skeleton, and A LOT more, will already be in the HTML file for you. At that point, it is just a matter of modifying and rearranging whats already there!</mark></p>
+                
+
+        <h2>HTML Skeleton</h2>
+        <p>Here's the bare bones HTML skeleton for your reference:</p>
+
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Your Page Title&lt;/title&gt;
+
+    &lt;!-- Optional: Add your CSS stylesheets here --&gt;
+    &lt;!-- &lt;link rel="stylesheet" href="styles.css"&gt; --&gt;
+
+    &lt;!-- Optional: Add your JavaScript files here --&gt;
+    &lt;!-- &lt;script src="script.js"&gt;&lt;/script&gt; --&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;!-- Your HTML content goes here --&gt;
+
+    &lt;!-- Optional: Add your JavaScript code inline or at the bottom of the body --&gt;
+    &lt;!-- &lt;script&gt;
+        // JavaScript code goes here
+    &lt;/script&gt; --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+
+        <h2>Description:</h2>
+        <p>The skeleton code includes the following tags:</p>
+
+        <ul>
+            <li><code>&lt;!DOCTYPE html&gt;</code>: This appears at the top of the file and declares that the document is an HTML file and also specifies the version of HTML being used. In this case, "html" refers to version HTML5.</li><br/>
+            <li><code>&lt;html lang="en"&gt;</code>: This is the root element of the HTML document and specifies the language of the content (English, in this case). Every HTML document has <code>&lt;html&gt;</code> as the root element. The root element is the tag that contains all other tags. It is the outer most tag. The only two tags that appear directly under the <code>&lt;html&gt;</code> tag are the <code>&lt;head&gt;</code> tag and <code>&lt;body&gt;</code> tag, which are both described here:<br/>
+                <ul><br/>
+                    <li><code>&lt;head&gt;</code>: The <code>&lt;head&gt;</code> tag contains meta-information about the HTML document, such as the page title, description, links to the favicon and other resources like CSS stylesheets and JavaScript files. The term "meta information" just means information about information. The items that are between the <code>&lt;head&gt;</code> tags do not appear in the webpage when its viewed in the browser.<br/>
+                    <li style="list-style: none;">
+                        <ul><br/>
+                            <li><strong>Tags within the <code>&lt;head&gt;</code> tag:</strong>
+                                <ul><br/>
+                                    <li><code>&lt;meta charset="UTF-8"&gt;</code>: Specifies the character encoding of the document as UTF-8, which supports a wide range of characters and symbols. Don't get too worried about things like character encoding at this time. Character encoding just determines how the letters, numbers, and symbols on the page are converted into binary (1's and 0's) for processing by the computer. There are a number of different encoding schemes. UTF-8 is one of the most widely used.</li><br/>
+                                    <li><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>: Sets the viewport properties for responsive web design, ensuring proper rendering on various devices and screen sizes. Here's a break down of what each part of this tag means:
+                                    <ul>
+                                        <li><code>width=device-width</code>: Sets the width of the page to follow the screen width of the device. This ensures that the content adjusts correctly to different screen sizes.</li>
+                                        <li><code>initial-scale=1.0</code>: Sets the initial zoom level when the page is first loaded by the browser.</li>
+                                    </ul>
+                                    </li><br/>
+                                    <li><code>&lt;title&gt;</code>: Sets the title of the HTML document, which appears in the browser's title bar or tab.</li><br/>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><code>&lt;body&gt;</code>: The <code>&lt;body&gt;</code> tag contains the main content of the HTML document, including text, images, links, and other HTML elements.</li><br/>
+                </ul>
+            </li>
+            <li><strong>Optional:</strong>
+                <ul><br/>
+                    <li>You can include inline CSS styles or JavaScript code directly within the <code>&lt;style&gt;</code> or <code>&lt;script&gt;</code> tags, respectively.</li><br/>
+                    <li>You can also include links to external CSS stylesheets and JavaScript files in the <code>&lt;head&gt;</code> section using <code>&lt;link&gt;</code> and <code>&lt;script&gt;</code> tags, respectively.</li><br/>
+                </ul>
+            </li>
+            <li>Comments are included to guide you on where to add your CSS stylesheets, JavaScript files, and HTML content.</li>
+        </ul>
+
+        <hr>
+
+        <h1><mark>Concluding Thoughts:</mark></h1>
+
+        This is just our two-cents, but most of the time, when we start building a new website, we start from a theme, which usually contains one or more HTML pages/templates, each with different contents, like a Homepage, an About Us page, a Contact Us page, etc. When we choose a template page to start developing from, we don't go through the template page line-by-line to understand what it is doing and how it is doing it. Most of the time, we are able to gloss over things quickly to get to the section of code we want to modify. We can do this quickly because we are familiar with what the different tags do.</p>
+        <p>Once you start working from templates, you will notice a lot of things going on in the <code>&lt;head&gt;</code> section and other places. Once you are familiar with the basic tags and what they do, you should be able to do this glossing over too. The <code>&lt;div&gt;</code> tags can get crazy. You will come across pages that have many layers of nested <code>&lt;div&gt;</code> tags just to keep things organized.</p>
+        <p>In the end, we find it more fun to start with a theme and stay goal oriented. We dive into the sections of the code we want to modify right away, and then immediately see the changes reflected in the browser. Rather than trying to sit there and digest the whole template line-by-line.</p>
+
+
+        <hr> 
+
+                
+
+        <footer>
+            <div> created by <a href="https://github.com/ajaydhar1">@ajaydhar1</a></div>
+        </footer>
+    </main>
+
+</body>
+
+</html>
