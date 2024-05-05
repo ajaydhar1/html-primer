@@ -1,5 +1,5 @@
 # HTML Primer
-The best webpage for newbies to quickly come up to speed with HTML.
+The best webpage for new developers to quickly come up to speed with HTML.
 
 ## What is in the index.html?
 This webpage can be used as a guide to quickly learn how to make your own webpages using HTML.
